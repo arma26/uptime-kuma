@@ -1,0 +1,1 @@
+no validation of imported config before uptime-kuma drops your current config
