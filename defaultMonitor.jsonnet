@@ -5,17 +5,22 @@
     method: 'GET',
     hostname: '',
     port: null,
-    maxretries: 0,
+    // Retries
+    maxretries: 2,
     weight: 2000,
     active: 1,
     type: null,
+    // Heartbeat Interval (Check every 60 seconds)
     interval: 60,
+    // Heartbeat Retry Interval (Retry every 60 seconds)
     retryInterval: 60,
+    // Resend Notification if Down X times consequently (Resend disabled)
     resendInterval: 0,
     keyword: null,
     expiryNotification: false,
     ignoreTls: false,
     upsideDown: false,
+    // Max. Redirects
     maxredirects: 10,
     accepted_statuscodes: [
       '200-299',
